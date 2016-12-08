@@ -1,0 +1,40 @@
+ {
+  "route": "clients",
+  "name": "clients",
+  "moduleDesc": "Clients module",
+  "active": "false",
+  "schemaForm": {
+    "schema": {
+      "properties": {
+        "childUrl": {
+          "title": "Child route",
+          "type": "string"
+        },
+        "instance": {
+          "title": "Firebase instance",
+          "type": "string"
+        },
+        "modules": {
+          "items": {
+            "enum": ["a", "b"],
+            "type": "string"
+          },
+          "title": "Module's list",
+          "type": "array"
+        },
+        "name": {
+          "minLength": 2,
+          "title": "Client name",
+          "type": "string"
+        }
+      },
+      "required": ["name", "instance", "childUrl"],
+      "type": "object"
+    },
+    "form": ["name", "modules", "instance", "childUrl", {
+      "title": "Save",
+      "type": "submit"
+    }]
+  },
+  "tableColumns": ["name", "instance"]
+ }
