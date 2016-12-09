@@ -26,4 +26,4 @@ and populates a HTML template with the content that exists.
 1. [Angular2 Official Website](https://angular.io/ "Angular2 Official Website")
 2. [Firebase Official Website](https://firebase.google.com/ "Firebase Official Website")
 3. [Angular2 SchemaForm Github Repository](https://github.com/makinacorpus/angular2-schema-form "Angular2 SchemaForm Repo")
-4. [Angular2 Firabase Official Github Repository](https://github.com/angular/angularfire2 "Angular2 Firebase Official Repo")
+4. [Angular2 Firebase Official Github Repository](https://github.com/angular/angularfire2 "Angular2 Firebase Official Repo")
