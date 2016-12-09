@@ -1,7 +1,0 @@
-{
-    "name": "FeedMe",
-    "childRoute": "feedbackcontinuo",
-    "firebaseInstance": "https://feedbackcontinuo.firebaseio.com",
-    "secret": "",
-    "modules": ["banners", "news"]
-}

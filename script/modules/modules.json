@@ -1,0 +1,62 @@
+ {
+  "route": "newModule",
+  "name": "Modules",
+  "moduleDesc": "",
+  "active": "false",
+  "schemaForm": {
+    "schema": {
+      "properties": {
+        "active": {
+          "title": "Active?",
+          "type": "boolean"
+        },
+        "description": {
+          "default": "",
+          "title": "Module description",
+          "type": "string"
+        },
+        "module": {
+          "minLength": 2,
+          "title": "Module route",
+          "type": "string"
+        },
+        "name": {
+          "minLength": 2,
+          "title": "Module name",
+          "type": "string"
+        },
+        "schemaForm": {
+          "properties": {
+            "form": {
+              "type": "string"
+            },
+            "schema": {
+              "type": "string"
+            }
+          },
+          "title": "Schema Form",
+          "type": "object"
+        },
+        "tableColumns": {
+          "title": "Table columns",
+          "type": "string"
+        }
+      },
+      "required": ["module", "name"],
+      "type": "object"
+    },
+    "form": ["module", "name", "description", "active", {
+      "key": "schema",
+      "title": "Schema",
+      "type": "textarea"
+    }, {
+      "key": "form",
+      "title": "Form",
+      "type": "textarea"
+    }, "tableColumns", {
+      "title": "Save",
+      "type": "submit"
+    }]
+  },
+  "tableColumns": ["name", "active", "module", "description"]
+ }

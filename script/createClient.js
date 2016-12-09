@@ -1,53 +1,91 @@
-/* This is the structure required to write at the DB
-    {
-        "name": "FeedMe",
-        "childRoute": "feedbackcontinuo",
-        "firebaseInstance": "https://feedbackcontinuo.firebaseio.com",
-        "secret": "",
-        "modules": ["banners", "news"]
-    }
+/*
+    This script is intended to instantiate and load
+    the modules of a new client.
  */
 
-// Utility-Wrapper. Return true if the object is not empty
+
+/*
+    Dependencies
+*/
+var _ = require("lodash");
+var admin = require("firebase-admin"); 
+
+
+/* Utility-Wrappers */
 function isEmpty(obj)
 {
     return (Object.getOwnPropertyNames(obj).lengt === 0);
 }
 
-var admin = require("firebase-admin");
-var serviceAccount = require("./credentials/PruebaSynergy-credentials.json");
+function isSubset(source, target) {
+    return !_.difference(_.flatten(source), _.flatten(target)).length;
+}
 
+/*
+    Check if there is a client to create. The new client
+    is passed by a command line argument
+*/
+if (process.argv.length == 3)
+{
+    var newClient = require("./clients/" + process.argv[2] + ".json");
+}
+else
+{
+    throw new Error("There is no new client parameter defined");
+}
+
+/*  
+    Initialize the Firebase instance with the new client 
+    with the data of the newClient object
+*/
 admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://pruebasynergy-c5d93.firebaseio.com/"
+    credential: admin.credential.cert(newClient.secret),
+    databaseURL: newClient.firebaseInstance
 })
 
-var db = admin.database();
-var clientsRef = db.ref("clients");
-var newClientObj, newClient;
-
 /* 
-    Pass the name(s) of the JSON file(s) as 
-    a command line argument(s)
- */
-if (process.argv.length > 2)
+    Import the init configuration to verify if the
+    new client modules are a subset of the 
+    modules in the metadata.
+*/
+var config = require("./config/init.json");
+if (!isSubset(newClient.modules, config.modules))
 {
-    for(var i = 2; i < process.argv.length; i++)
+    throw new Error("")
+}
+
+/*
+    Reference to the root of the new client Firebase
+    instance
+*/
+var db = admin.database();
+var rootRef = db.ref();
+
+/*
+    Iterate through the new client modules and set
+    the new module at the Firebase instance.
+*/
+for(var i = 0; i < newClient.modules.length; i++)
+{
+    moduleObj = require("./modules/"+newClient.modules[i]+".json");
+    if (!isEmpty(moduleObj))
     {
-        newClientObj = require("./" + process.argv[i]);
-        if (!isEmpty(newClientObj))
-        {
-            newClientRef = clientsRef.push();
-            newClientRef.set(newClientObj, function(error) {
-                if (error)
-                {
-                    console.log("Data could not be saved." + error);        
-                }
-                else
-                {
-                    console.log("Data saved successfully.");
-                }
-            });
-        }
+        modulesRef = rootRef.child("modules");
+        modulesRef = modulesRef.child(newClient.modules[i]);
+        modulesRef.set(moduleObj, function(error) {
+            if (error)
+            {
+                console.log("Data could not be saved." + error);        
+            }
+            else
+            {
+                console.log("Data saved successfully.");
+            }
+        });
     }
 }
+
+/*
+    Exit successfully
+ */
+process.exit();
