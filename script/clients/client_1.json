@@ -1,0 +1,17 @@
+{
+    "name": "client_1",
+    "firebaseInstance": "https://pruebasynergy-c92f7.firebaseio.com",
+    "secret":{
+        "type": "service_account",
+        "project_id": "pruebasynergy-c92f7",
+        "private_key_id": "bcd89298486b0b0ff503d48bebcdc72eb1f7b3b0",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC00/2f66TcnXSm\nQ/AXtm4Qgq0pCAhE9NPQ2apAHWSWNoXxg9MZuVHLWV39goGJh93MAH1lhdOrDEnC\n5sApyFF0Q4xhc0hedaYFX0Ei/sHDmpi0Zyye8uvXigk7nw4EB1o+I9wVorCdO6ds\ndMH6mF5f/8aEVl7TXyKRIdattmDYm9Rq0WBnnwwfqDxbGPp4CKD42Jyd/3RwnR8x\n9esa6A/yRQ0eDfn8LJ0CKKMF/fGAFALow6rvKBsLHzkumjQWcMg+Xj91GTl4C4q/\n5xLOjOkR5s5n8q1+brFm8U9IB2hqK/XM41jKlMxJ/E4kM6Sqrka6FiCmPjyoW76m\nQ+5M4J4TAgMBAAECggEAau0j/0mXPgE5dgucUFlGsiqjfCzMvwHKsqfTPYBj91Mc\nVxjtXjuwOz+IDZz7PjkCFVyAyeSdqnpkr4RFQy+5wrcirok91OVam7icyrW8HA8x\nlxOfVgotHVH5bbD617UFTtNjk8OVDhS1RrOv9J/exoN3fs+X2QNbbFiHGkdK8yoL\niPxd/ewW3fL1SBfPBfCxAgMZcLgzDCSdD+gffMv+fGzP1RYTZYNXVUAF/wD8vBUN\n1R8uOrdADF0q/eAMxC31BLbG0+MjX2xEA3HbIiHLyzsK77ldnD2kLRXcnpkI/Qp1\nNsFotn0Ok9voOO92ih1MVPJrZp/O0AmcCt4lebm/EQKBgQDfhSAHf85QP31WThwM\nrqVpCaqdHIJP4CMZbpAErXKMgGHGJcLiZ6Pz8nupZfzYJfaa1Bp138MUxWD8leOT\nMCJ1japiFbn7yTlYMTWPd6qN02njZZo8psmeG4KkxEKrd1eyannlL6dfCV/oDZ9E\nupJPy1Oumpi49oZ9rrCOSGwVWwKBgQDPGr02Mi2KyWKE5Zbur839mxXZsdH9tmqz\ntRuxZvgEvyzisUDvguQe4zIOhqn8/FM7eequ2sMOFUziDiPraBF5cV9v7yTZbWy2\n0s0wKFATMWOzuA9HHYBASG0kXWdLDhbDdzCp8JGBMj8VLf/t9jo3gr2pFf102HSF\nwGiBwTmfqQKBgAgLq655bDy5PFK59wqB0tRoE6saFpq3b6v/rdFtSN1D1cEjJNOv\ndVhXlxnu4N4K58iE7/rkNgpuXGJbJtjqd6MRmVt0esBUausAwnPKk+oM/RfBVX7v\nZfx58wbpRZkUb6StbnvQbk7ecIRS0TPRH2kd4YI8cFjgDtFBU3ubocBXAoGANne9\n04cW2y1jr7gCHfw2nMAw2vQdWjCjl2fGRL3j9LuivmwHu/YcsNLn01IvWs2xxi6m\nPh5itk17zugRIlRYZCwhAXtPoa9ZrCt8s3GmvaV7p0R9ICLuG/nwWmQGSoMGEZpD\nPi561hO064kRii/716WW4+VYp2ZWHucflSCQWyECgYAv3AMnsOu0W/nJmwjZM7yw\nQzpFI5a9LHAT8/BdMPt354T57woQcWzf3567WwJyO5iv8RpVDpFcfmqy3AhayFNk\nubM/0QZpWnfKfzonk4doAl9CJN3n+6DFtqud/ic0KMAbYvZHU+nOge0Z1Xr2fela\nysuzPidOLgvBARxrMmXh6g==\n-----END PRIVATE KEY-----\n",
+        "client_email": "lstd-931@pruebasynergy-c92f7.iam.gserviceaccount.com",
+        "client_id": "104205256481859155850",
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+        "token_uri": "https://accounts.google.com/o/oauth2/token",
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/lstd-931%40pruebasynergy-c92f7.iam.gserviceaccount.com"
+    },
+    "modules": ["banners", "news"]
+}

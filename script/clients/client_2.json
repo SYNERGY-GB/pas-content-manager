@@ -1,0 +1,17 @@
+{
+    "name": "client_2",
+    "firebaseInstance": "https://client2-a188f.firebaseio.com",
+    "secret": {
+  "type": "service_account",
+  "project_id": "client2-a188f",
+  "private_key_id": "d8143ba670727ad437bc2bd96a2b7db6aa982a70",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDVAUgm7VVr4q5e\n/2HxjjDbdPQmgZWvVceiVf65m5AnUqCIWe6VluwYlroTGVN+Pwwja6kwHWXdQIDh\nTynHbpHhOgZ9lpJbf0DWu/PZTmUVrlPwt9owy5mePrtGR7c+c5yA1ItZHKGjGB5V\nBzqtxcRXEm/8Uyg0INb2fKSSO54MI39MmBy0k8t1Nvd0yKKlP7RGxLXgWsJN2k+v\nPVNzs/LQwRU8qdmWL/6EygU2tJ9R03bXruFknkIjynzsSitcbLf/74oJhPNYH+wY\nYQo/H09yLii52scJG2IzXkXXuJUUW4t9XKoU83pKvo3V7mooTyC5gNvvYGPxOvU9\nCx2NdkFnAgMBAAECggEAGJ+FT7qv3UDfF2w+TkY5r6TddHYWb6Zi5Yk7YQlyqJkM\npbZ/ths0P8NszzhmRnnTVWTksgMz+1exjlowYjWN95NVnL8DPECBplEj50MAvHji\nizk1p95ha8GktIMl07pZpSrs0OhWZxwqpXmodt4dzFL9TxXt19jUALp368+ofY6G\n6wxrz1i0ZgKt4w5gtk0OujdazbA/7mTxCmvdWc6Aw/JAVP+wcrbucVbmnAgjVgjJ\nHLVpwQwJMYWdzD3NlSMsyzsYcZCg7hNtDQWoPK12hJxrk6EUk9fvpwy1m2uhFxyt\njfG3txE9LdD5mdCQSdF9uXfDE5DtkVag51PRuZJIgQKBgQDx2xu679qPy/pKgUwf\nXkDhWNhmoPImf1eB9YiMgRmRsGigTpVrwbVFELfOsMw8UZlWJ/qIUP3/LPozaiOK\nX1uftIrH80HOHF2IjnkA429P7brurtA1S0mGnpVwkOkMmt85mat5STwdTWLofG3P\nWa3GYyVPzZG+IqBGkbDS9ypZzwKBgQDhdj0p9CYMZa+0DmAAR+G6n90AaXn9cNAi\n5mosq2BxQ2La3mZsqt602UNqDnckE40lowyG0GOh7nlDxMzRjFCOez7JxNuGmFWc\nkAhMUgiOuIYkr4NmDWnvFDtLZ7+zomFmWH+Hi1ia7TNjBnBQYvrYwCP6CvbjXXcx\nk6y0pMI86QKBgEGkARu0W3Jpnw23l+xvjVZb4afBCNev+hUYia3wn/rtkQfpLB6p\n3UPYbLqZO2UnlGFQymtS6AzorSNlLC4zAVAQFRZ9jB+fjTcxy9+U2rIryG9dXL8K\nJvN1eQOrIMU+B1W/wk1RthIR3cVReBAtu787S3YkSej7xtpAUmh/kqv7AoGBAK3E\n4slGClk9ulkNR0KQJFMhSUU7BjGm1FRBwI1jHLbPGA7WoJyaaYF7fnDsazkb9IqQ\ni2QQkunIkiAAO1g6TBA0vyTlm8i1+i3r+OlRxJSzdXgq6hwqtH322uh4MxExUt59\n0PTYGld2AEgPO1tJnkqWdGQQNU7xx58nUVH9NlOZAoGAcbI2OYyufhicZ3ZDID5J\nefVNE3wkQ4RYgIxv3tDOt3XXQ+Uj8RzKNdZSFdmkSdc0w8VWGp5FA4+lU2bagE7N\nfuhZBtyv48i3EQUvAQbGpSbtpxhRBWhLz8R8fNh4vYAM+PNTRCi2gke+gWVQRH+M\nR20ygfgxweeE5S6gB0RTDZU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "lstd-773@client2-a188f.iam.gserviceaccount.com",
+  "client_id": "110203303074095983679",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/lstd-773%40client2-a188f.iam.gserviceaccount.com"
+},
+    "modules": ["banners", "news"]
+}
