@@ -51,7 +51,7 @@ admin.initializeApp({
 var config = require("./config/init.json");
 if (!isSubset(newClient.modules, config.modules))
 {
-    throw new Error("")
+    throw new Error("The set of modules is not a valid subset.")
 }
 
 /*
@@ -65,6 +65,8 @@ var rootRef = db.ref();
     Iterate through the new client modules and set
     the new module at the Firebase instance.
 */
+var saved = 0;
+
 for(var i = 0; i < newClient.modules.length; i++)
 {
     moduleObj = require("./modules/"+newClient.modules[i]+".json");
@@ -79,13 +81,17 @@ for(var i = 0; i < newClient.modules.length; i++)
             }
             else
             {
-                console.log("Data saved successfully.");
+                saved++;
+                if (saved == 1)
+                    console.log("1 Module saved.");
+                else
+                    console.log(saved + " Modules saved.");
+                if (saved == newClient.modules.length){
+                    console.log("Done!");
+                    db.goOffline();
+                }                                
             }
         });
     }
 }
 
-/*
-    Exit successfully
- */
-process.exit();
