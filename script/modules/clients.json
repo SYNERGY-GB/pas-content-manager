@@ -36,5 +36,13 @@
       "type": "submit"
     }]
   },
-  "tableColumns": ["name", "instance"]
- }
+  "tableColumns": ["name", "instance"],
+  "menuObj":{
+    "path": "news",
+    "data": {
+      "menu": {
+        "title": "News"
+      }
+    }
+  }
+   }
