@@ -17,10 +17,11 @@ and populates a HTML template with the content that exists.
 2. [Client] (./client)
 3. [Script] (./script)
 
-##ToDo List
-1. Make a script that upload the Schema and the Form file to the Firebase instance
-2. Mockup of the admin app and populates the Firebase instance
-3. Mockup of the client-side app. Read content from the FB instance 
+##Usage
+1. Clone the project.
+2. In a terminal, go to the project's folder. Then go to the script folder
+3. Define a client in the clients folder. The new client should have the same properties as client_1.json
+4. In /script, run `node createClient <name_of_the_new_client.json>`
 
 ##References:
 1. [Angular2 Official Website](https://angular.io/ "Angular2 Official Website")

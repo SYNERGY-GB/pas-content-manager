@@ -1,0 +1,29 @@
+ {
+  "route": "faq",
+  "name": "FAQ",
+  "moduleDesc": "FAQ module",
+  "active": "true",
+  "schemaForm": {
+    "schema": {
+      "properties": {
+        "question": {
+          "minLength": 2,
+          "title": "Question",
+          "type": "string"
+        },
+	"answer": {
+		"minlength": 2,
+		"title": "Answer",
+		"type": "string"
+	}
+      },
+      "required": ["question", "answer"],
+      "type": "object"
+    },
+    "form": ["answer", "question", {
+      "title": "Save",
+      "type": "submit"
+    }]
+  },
+  "tableColumns": ["question", "answer"]
+ }

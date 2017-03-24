@@ -1,0 +1,29 @@
+ {
+  "route": "notification",
+  "name": "Notification",
+  "moduleDesc": "Notification module",
+  "active": "true",
+  "schemaForm": {
+    "schema": {
+      "properties": {
+        "title": {
+          "minLength": 2,
+          "title": "Title",
+          "type": "string"
+        },
+	"msg": {
+		"minlength": 2,
+		"title": "Message",
+		"type": "string"
+	}
+      },
+      "required": ["title", "msg"],
+      "type": "object"
+    },
+    "form": ["title", "msg", {
+      "title": "Save",
+      "type": "submit"
+    }]
+  },
+  "tableColumns": ["title", "msg"]
+ }

@@ -1,0 +1,24 @@
+ {
+  "route": "phones",
+  "name": "Phones",
+  "moduleDesc": "Phones module",
+  "active": "true",
+  "schemaForm": {
+    "schema": {
+      "properties": {
+        "number": {
+          "minLength": 2,
+          "title": "Phone Number",
+          "type": "string"
+        }
+      },
+      "required": ["number"],
+      "type": "object"
+    },
+    "form": ["number", {
+      "title": "Save",
+      "type": "submit"
+    }]
+  },
+  "tableColumns": ["number"]
+ }

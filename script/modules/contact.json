@@ -1,0 +1,29 @@
+ {
+  "route": "contact",
+  "name": "Contact",
+  "moduleDesc": "Contact module",
+  "active": "true",
+  "schemaForm": {
+    "schema": {
+      "properties": {
+        "title": {
+          "minLength": 2,
+          "title": "Title",
+          "type": "string"
+        },
+	"direction": {
+		"minlength": 2,
+		"title": "Direction",
+		"type": "string"
+	}
+      },
+      "required": ["title", "direction"],
+      "type": "object"
+    },
+    "form": ["title", "direction", {
+      "title": "Save",
+      "type": "submit"
+    }]
+  },
+  "tableColumns": ["title", "direction"]
+ }
