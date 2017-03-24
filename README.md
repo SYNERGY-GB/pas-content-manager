@@ -13,9 +13,9 @@ that reads content from the Firebase instance(using Angular2 and Firebase)
 and populates a HTML template with the content that exists.
 
 ##Applications:
-1. [Admin] (./admin)
-2. [Client] (./client)
-3. [Script] (./script)
+1. [Admin] (https://github.com/SYNERGY-GB/pas-content-manager-admin)
+2. [Client] (https://github.com/SYNERGY-GB/pas-content-manager-client)
+3. [Script] (https://github.com/SYNERGY-GB/pas-content-manager-scripts)
 
 ##Usage
 1. Clone the project.
